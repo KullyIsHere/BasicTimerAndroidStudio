@@ -26,8 +26,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void MoveTimer(View view) {
         System.out.println("Going to timer");
-       Intent intent = new Intent(MainActivity.this,Timer.class);
+       Intent intent = new Intent(MainActivity.this,TimeSelect.class);
        startActivity(intent);
+       overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
 }

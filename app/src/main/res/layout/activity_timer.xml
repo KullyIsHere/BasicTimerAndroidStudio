@@ -5,36 +5,51 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="ReturnMain"
+    android:onClick="ReturnSelect"
     tools:context=".Timer">
+
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="75dp"
-        android:layout_marginTop="73dp"
-        android:layout_marginEnd="278dp"
-        android:layout_marginBottom="639dp"
-        android:text="TIMER"
+        android:layout_marginTop="356dp"
+        android:layout_marginBottom="356dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="00:00:00"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/return_main"
+        android:id="@+id/return_select"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="574dp"
-        android:layout_marginEnd="310dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="667dp"
+        android:layout_marginEnd="307dp"
         android:layout_marginBottom="16dp"
+        android:onClick="ReturnSelect"
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/outline_timer_24" />
 </androidx.constraintlayout.widget.ConstraintLayout>
